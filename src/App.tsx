@@ -4,10 +4,14 @@ import { JoinForm } from './components/room/JoinForm'
 import { MeetingRouteWrapper } from './components/room/MeetingRouteWrapper'
 import { CreateClassroomScreen } from './components/room/CreateClassroomScreen'
 import type { Role } from './types/webrtc'
+  
+
 
 // Component to handle old URL redirect: ?room=abc-defg-hij -> /classroom/abc-defg-hij
 function OldUrlRedirect() {
   const navigate = useNavigate()
+
+  
   const location = useLocation()
   
   useEffect(() => {
